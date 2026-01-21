@@ -1,0 +1,422 @@
+/****************************************
+        カッテネ
+*****************************************/
+.kattene {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 1em;
+  box-sizing: border-box; }
+
+.kattene div{
+  margin: 0;
+}
+.kattene__imgpart {
+  text-align: center; }
+
+  .kattene__imgpart img {
+    -webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    -o-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    -ms-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    margin: 0;
+
+    /* 画像サイズ制限（縦横比維持） */
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    
+    /* 縦横比を保ちながら枠内に収める */
+    object-fit: contain;
+    display: block;
+ }
+
+.kattene__description {
+  font-size: 0.8em; }
+
+.kattene .kattene__btns {
+  width: 100%;
+  margin-top: 0.5em; }
+
+  .kattene__btns:after {
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    content: "."; }
+
+  .kattene__btns > div {
+    float: left;
+    margin-bottom: 5px; }
+
+  .kattene__btns .kattene__btn {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+   }
+
+  .kattene__btns.__three > div {
+    width: 32.66667%; }
+
+    .kattene__btns.__three > div:not(:last-child) {
+      margin-right: 1%; }
+
+  .kattene__btns.__two > div {
+    width: 49.5%; }
+
+    .kattene__btns.__two > div:nth-child(odd) {
+      margin-right: 1%; }
+
+@media screen and (max-width: 900px) {
+  .kattene__imgpart {
+    padding-bottom: 1em; }
+  .kattene .kattene__btns {
+    margin-top: 0.5em; }
+  .kattene__btns.__five > div {
+  width: 49.5%; }
+  .kattene__btns.__five > div:nth-child(odd) {
+    margin-right: 1%; }
+  .kattene__btns.__five > div:last-child {
+    margin-right: 0;
+    float: right; }
+
+  .kattene__btns.__four > div {
+    width: 49.5%; }
+
+    .kattene__btns.__four > div:nth-child(odd) {
+      margin-right: 1%; }
+
+  .kattene__btns.__one > div {
+    width: 50%;
+    margin-left: 25%; } }
+@media screen and (min-width: 901px) {
+
+  .kattene {
+    display: table;
+    width: 100%; }
+
+  .kattene__imgpart {
+    display: table-cell;
+    width: 20%;
+    padding-bottom: 5px;
+  }
+
+  .kattene__infopart {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+    padding-left: 10px;
+    width: 80%; }
+
+  .kattene .kattene__description {
+    margin-bottom: 4em;
+  }
+
+  .kattene__btns {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    padding-right: 10px; }
+
+  .kattene__btns.__five > div {
+    width: 19.2%; }
+
+    .kattene__btns.__five > div:not(:last-child) {
+      margin-right: 1%; }
+
+    .kattene__btns.__four > div {
+      width: 24.25%; }
+
+      .kattene__btns.__four > div:not(:last-child) {
+        margin-right: 1%; }
+
+    .kattene__btns.__two > div {
+      width: 49.5%; }
+
+      .kattene__btns.__two > div:not(:last-child) {
+        margin-right: 1%; }
+
+    .kattene__btns.__one > div {
+      width: 49.5%;
+      float: right; } }
+
+.kattene .kattene__btn {
+  appearance: none;
+  background-color: #54c0d1;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 0;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+  .kattene__btn:hover, .kattene__btn:focus {
+    background-color: #439aa7;
+    color: #fff !important; }
+
+  .kattene__btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+    .kattene__btn:disabled:hover {
+      background-color: #54c0d1; }
+
+.kattene__btn.__small {
+  padding: 0.55em;
+  font-size: 0.9em; }
+
+.kattene__btn.__orange {
+  background-color: #FF9901;
+  -webkit-box-shadow: 0 5px 0 #cc7a01;
+  -moz-box-shadow: 0 5px 0 #cc7a01;
+  box-shadow: 0 5px 0 #cc7a01;
+  -o-box-shadow: 0 5px 0 #cc7a01;
+  -ms-box-shadow: 0 5px 0 #cc7a01;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  text-align: center; }
+
+  .kattene__btn.__orange:hover {
+    background-color: #cc7a01; }
+
+  .kattene__btn.__orange i {
+    font-weight: bold; }
+
+    .kattene__btn.__orange i:before {
+      vertical-align: middle;
+      font-size: 1.2em;
+      margin-right: 0.2em; }
+
+.kattene__btn.__blue {
+  background-color: #007dcd;
+  -webkit-box-shadow: 0 5px 0 #0064a4;
+  -moz-box-shadow: 0 5px 0 #0064a4;
+  box-shadow: 0 5px 0 #0064a4;
+  -o-box-shadow: 0 5px 0 #0064a4;
+  -ms-box-shadow: 0 5px 0 #0064a4;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  text-align: center; }
+
+  .kattene__btn.__blue:hover {
+    background-color: #0064a4; }
+
+  .kattene__btn.__blue i {
+    font-weight: bold; }
+
+    .kattene__btn.__blue i:before {
+      vertical-align: middle;
+      font-size: 1.2em;
+      margin-right: 0.2em; }
+
+.kattene__btn.__red {
+  background-color: #c20004;
+  -webkit-box-shadow: 0 5px 0 #9b0003;
+  -moz-box-shadow: 0 5px 0 #9b0003;
+  box-shadow: 0 5px 0 #9b0003;
+  -o-box-shadow: 0 5px 0 #9b0003;
+  -ms-box-shadow: 0 5px 0 #9b0003;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  text-align: center; }
+
+  .kattene__btn.__red:hover {
+    background-color: #9b0003; }
+
+  .kattene__btn.__red i {
+    font-weight: bold; }
+
+    .kattene__btn.__red i:before {
+      vertical-align: middle;
+      font-size: 1.2em;
+      margin-right: 0.2em; }
+
+.kattene__btn.__green {
+  background-color: #0BBD80;
+  -webkit-box-shadow: 0 5px 0 #099766;
+  -moz-box-shadow: 0 5px 0 #099766;
+  box-shadow: 0 5px 0 #099766;
+  -o-box-shadow: 0 5px 0 #099766;
+  -ms-box-shadow: 0 5px 0 #099766;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  text-align: center; }
+
+  .kattene__btn.__green:hover {
+    background-color: #099766; }
+
+  .kattene__btn.__green i {
+    font-weight: bold; }
+
+    .kattene__btn.__green i:before {
+      vertical-align: middle;
+      font-size: 1.2em;
+      margin-right: 0.2em; }
+
+.kattene__btn.__pink {
+  background-color: #e1325b;
+  -webkit-box-shadow: 0 5px 0 #b42849;
+  -moz-box-shadow: 0 5px 0 #b42849;
+  box-shadow: 0 5px 0 #b42849;
+  -o-box-shadow: 0 5px 0 #b42849;
+  -ms-box-shadow: 0 5px 0 #b42849;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  text-align: center; }
+
+  .kattene__btn.__pink:hover {
+    background-color: #b42849; }
+
+  .kattene__btn.__pink i {
+    font-weight: bold; }
+
+    .kattene__btn.__pink i:before {
+      vertical-align: middle;
+      font-size: 1.2em;
+      margin-right: 0.2em; }
+
+/****************************************
+        独自作成
+*****************************************/
+	div.item-snippet{
+		font-weight: normal;
+	}
+	div.item-title a{
+		color:#779cff !important;
+	}
+	a.kattene__btn.__pink,a.kattene__btn.__red,a.kattene__btn.__blue,a.kattene__btn.__orange,a.kattene__btn.__green{
+		color:#ffffff !important;
+	}
+    #blog-pager-older-link{
+		display: inline-block;
+    }
+    #blog-pager-newer-link{
+		display: inline-block;
+    }
+    #blog-pager-home-link{
+		display: inline-block;
+		text-align : center;
+    }
+
+	/* テーブル */
+    .table01 {
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+      border-spacing: 0;
+      overflow-x: auto;  /* スクロール可能にする */
+      display: block;
+      white-space: nowrap;
+    }
+    .table01 th {
+     padding: 10px;
+     background: #e9faf9;
+     border: solid 1px #778ca3;
+    }
+    .table01 td {
+     padding: 10px;
+     border: solid 1px #778ca3;
+    }
+
+    .table02 {
+	 -webkit-overflow-scrolling: touch;
+	 display: block;
+	 overflow-x: scroll;
+	 white-space: nowrap;
+    }
+
+/****************************************
+        自作ブログカード
+*****************************************/
+  .my-blog-card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: #fff;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .my-blog-card img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .my-blog-card__content {
+    flex: 1;
+  }
+
+  .my-blog-card__title {
+    font-size: 14px; /* 読みやすいサイズに */
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+
+  .my-blog-card__description {
+    font-size: 18px; /* 小さすぎないよう調整 */
+    font-weight: normal;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  .my-blog-card__extra {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* 右寄せ */
+    margin-top: 8px;
+    font-size: 0.85em;
+    color: #555;
+  }
+
+  .my-blog-card__extra img {
+    width: 16px; /* Faviconの幅を小さく設定 */
+    height: 16px; /* Faviconの高さを小さく設定 */
+    margin-right: 8px; /* テキストとの間隔 */
+  }
+
+  /* モバイル最適化 */
+  @media (max-width: 600px) {
+    .my-blog-card {
+      flex-direction: row; /* 縦並びにならないようにする */
+      align-items: flex-start;
+    }
+
+    .my-blog-card img {
+      width: 72px;
+      height: 54px;
+    }
+
+    .my-blog-card__title {
+      font-size: 14px !important;
+    }
+
+    .my-blog-card__description {
+      font-size: 14px !important;
+    }
+
+    .my-blog-card__extra img {
+      width: 16px; /* Faviconの幅を小さく設定 */
+      height: 16px; /* Faviconの高さを小さく設定 */
+      margin-right: 4px; /* テキストとの間隔を少し狭く */
+    }
+  
+  }
