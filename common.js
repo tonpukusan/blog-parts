@@ -131,3 +131,19 @@ function escapeHTML(html) {
     };
     return html.replace(/[&<>"'`]/g, m => map[m]);
 }
+
+
+// ===============================
+//  HTMLエスケープ
+// ===============================
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.nav-link');
+  const currentHost = location.hostname;
+
+  links.forEach(link => {
+    const linkHost = new URL(link.href).hostname;
+    if (linkHost !== currentHost) {
+      link.setAttribute('target', '_blank');
+    }
+  });
+});
