@@ -429,84 +429,97 @@ body {
     }
 
     /****************************************
-        自作ブログカード(promp-card)
+        自作ブログカード(promo-card)
     *****************************************/
-    .promo-card {
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 16px;
-      background: #fff;
-      font-family: Arial, sans-serif;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .promo-card__thumbnail {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      border-radius: 4px;
-      flex-shrink: 0; /* 画像が潰れないように */
-    }
-
-    .promo-card__content {
-      flex: 1;
-    }
-
-    .promo-card__title {
-      font-size: 14px; /* 読みやすいサイズに */
-      font-weight: bold;
-      margin-bottom: 2px;
-    }
-
-    .promo-card__description {
-      font-size: 18px; /* 小さすぎないよう調整 */
-      font-weight: normal;
-      color: #333;
-      line-height: 1.5;
-    }
-
-    .promo-card__extra {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end; /* 右寄せ */
-      margin-top: 8px;
-      font-size: 0.85em;
-      color: #555;
-    }
-
-    .promo-card__extra img {
-      width: 16px; /* Faviconの幅を小さく設定 */
-      height: 16px; /* Faviconの高さを小さく設定 */
-      margin-right: 8px; /* テキストとの間隔 */
-    }
-
+	.promo-card-wrapper {
+	  margin: 1rem 0;
+	}
+	
+	.promo-card {
+	  display: flex;
+	  gap: 12px;
+	  padding: 12px;
+	  border-radius: 8px;
+	  background: #111;
+	  color: #fff;
+	  text-decoration: none;
+	}
+	
+	.promo-card__link {
+	  display: flex;
+	  gap: 12px;
+	  text-decoration: none;
+	  color: inherit;
+	}
+	
+	.promo-card__thumbnail {
+	  background-size: cover;
+	  background-position: center;
+	  border-radius: 4px;
+	  flex-shrink: 0;
+	  width: 120px;
+	  height: 90px;
+	}
+	
+	.promo-card__content {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 4px;
+	}
+	
+	.promo-card__title {
+	  margin: 0;
+	  font-size: 1rem;
+	}
+	
+	.promo-card__description {
+	  margin: 0;
+	  font-size: 0.85rem;
+	}
+	
+	.promo-card__extra {
+	  display: flex;
+	  align-items: center;
+	  gap: 6px;
+	  margin-top: 4px;
+	  font-size: 0.75rem;
+	}
+	
+	.promo-card__extra img {
+	  border-radius: 2px;
+	}
+	  
     /* モバイル最適化 */
-    @media (max-width: 600px) {
-      .promo-card {
-        flex-direction: row; /* 縦並びにならないようにする */
-        align-items: flex-start;
-      }
-
-
-      .promo-card__title {
-        font-size: 14px !important;
-      }
-
-      .promo-card__description {
-        font-size: 14px !important;
-      }
-
-      .promo-card__extra img {
-        width: 16px; /* Faviconの幅を小さく設定 */
-        height: 16px; /* Faviconの高さを小さく設定 */
-        margin-right: 4px; /* テキストとの間隔を少し狭く */
-      }
-  
+@media (max-width: 600px) {
+  .promo-card {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    width: 100%;
+    max-width: 100%;
   }
 
+  .promo-card__thumbnail {
+    width: 90px;
+    height: 70px;
+  }
 
+  .promo-card__title {
+    font-size: 14px !important;
+  }
+
+  .promo-card__description {
+    font-size: 14px !important;
+  }
+
+  .promo-card__extra {
+    font-size: 0.75em;
+  }
+
+  .promo-card__extra img {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+  }
+}
   }
