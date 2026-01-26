@@ -427,6 +427,7 @@ body {
       height: 16px; /* Faviconの高さを小さく設定 */
       margin-right: 4px; /* テキストとの間隔を少し狭く */
     }
+  }
 
 .promo-card {
   border: 1px solid #ccc;
@@ -507,5 +508,3 @@ body {
     margin-right: 4px;
   }
 }
-
-  }
