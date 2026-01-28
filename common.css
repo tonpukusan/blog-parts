@@ -447,8 +447,8 @@ body {
 }
 
 .promo-card__thumbnail {
-  width: 120px;
-  height: 90px;
+  width: 100px;
+  height: 75px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
