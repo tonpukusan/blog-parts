@@ -1,6 +1,6 @@
 (function() {
 
-  const DEFAULT_HEIGHT = "160px";
+  const DEFAULT_HEIGHT = "170px";
   const SELECTOR = ".promo-card";
 
   const targets = document.querySelectorAll(SELECTOR);
