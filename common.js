@@ -191,3 +191,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+export {
+  insKattene,
+  generateAmazonAffiliateLink,
+  generateRakutenAffiliateUrl
+};
